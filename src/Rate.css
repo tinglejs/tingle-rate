@@ -1,0 +1,23 @@
+/**
+ * Rate Component Style for tingle
+ * @author quanyun
+ *
+ * Copyright 2014-2015, Tingle Team, Alinw.
+ * All rights reserved.
+ */
+.tRateItem {
+  float: left;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  overflow: hidden;
+}
+.tRateItem svg {
+  width: 100%;
+  height: 100%;
+}
+.tRateItem.active svg {
+  fill: #fec02f;
+}
+
+/*# sourceMappingURL=Rate.css.map */
