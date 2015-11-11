@@ -22,29 +22,28 @@ class Rate extends React.Component {
 
     render() {
         let t = this;
-        let starItem = [];
+        let items = [];
         for (let i = 1; i <= t.props.totalScore; i++) {
-            let _item = (
-                <i className={classnames('tRateItem',{
+            let item = (
+                <i className={classnames('tRateItem', {
                     'active': i <= t.props.score
                 })} key={i} onClick={t.handleItemClick.bind(t, i)} style={{
                     width: unitize(t.props.height),
                     height: unitize(t.props.height)
                 }}>
-                    <Icon id={t.props.icon} className={'tRateStar'} />
+                    <Icon id='tingle-rate-icon' className={'tRateIcon'} />
                 </i>);
-            starItem.push(_item);
+            items.push(item);
         }
         return <div ref='root' className={classnames('tRate tFBH', {
             [t.props.className]: !!t.props.className
         })}>
-            {starItem}
+            {items}
         </div>;
     }
 }
 
 Rate.defaultProps = {
-    icon: 'tingle-rate-icon',
     totalScore: 5,
     score: 0,
     height: 30,
