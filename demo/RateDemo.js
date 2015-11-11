@@ -15,20 +15,25 @@ class Demo extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            grade: 0
+            score: 0
         }
     }
 
     handleChange(g) {
         this.setState({
-            grade: g
+            score: g
         });
     }
 
     render() {
         let t = this;
         return <div>
-            <Rate iconNumber={5} defaultIcon={'tingle-rate-icon'} activeIcon={'tingle-rate-icon-active'} grade={t.state.grade} onChange={t.handleChange.bind(t)} />
+            <div className="tFBH tFBAC tH44">
+                <div className="tFB1">服务态度：</div>
+                <div>
+                    <Rate totalScore={5} height={30} score={t.state.score} onChange={t.handleChange.bind(t)} />
+                </div>
+            </div>
         </div>
     }
 }

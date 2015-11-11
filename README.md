@@ -20,10 +20,10 @@ npm install tingle-rate --save
 | 配置项 | 必填 | 默认值 | 功能/备注 |
 |---|----|---|----|
 |className| optional |-|-|
-|iconNumber| optional |-|显示多少个icon|
-|defaultIcon| optional |-|默认icon|
-|activeIcon| optional |-|选中时的icon|
-|grade|optional|-|默认分数|
+|totalScore| optional |-|总分|
+|height| optional |-|默认30px，icon一定是正方形的，也就是width=height|
+|score|optional|-|默认分数|
+|onChange| optional |-|返回选中的score|
 
 
 ## Links
