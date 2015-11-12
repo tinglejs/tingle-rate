@@ -61,7 +61,10 @@ Rate.propTypes = {
         React.PropTypes.number,
         React.PropTypes.string
     ]),
-    gap: React.PropTypes.number,
+    gap: React.PropTypes.oneOfType([
+        React.PropTypes.number,
+        React.PropTypes.string
+    ]),
     onChange: React.PropTypes.func
 };
 
