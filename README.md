@@ -12,7 +12,7 @@ npm install tingle-rate --save
 ## usage
 
 ```js
-<Rate totalScore={5} height={30} score={t.state.score} onChange={t.handleChange.bind(t)} />
+<Rate totalScore={5} height={30} gap={15} score={t.state.score} onChange={t.handleChange.bind(t)} />
 ```
 
 ## Props
