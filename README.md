@@ -7,7 +7,7 @@ npm install tingle-rate --save
 ```
 
 截图：
-[tingle-rate](//img.alicdn.com/tps/TB1gUbDKpXXXXbqXXXXXXXXXXXX-582-944.png)
+![tingle-rate](//img.alicdn.com/tps/TB11XrrKpXXXXc0aXXXXXXXXXXX-726-694.png)
 
 ## usage
 

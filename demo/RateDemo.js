@@ -19,31 +19,32 @@ class Demo extends React.Component {
         }
     }
 
-    handleChange(g) {
+    handleChange(label, score) {
         this.setState({
-            score: g
+            [label]: score
         });
     }
 
     render() {
         let t = this;
-        return <div>
+        let [totalScore, height, gap] = [5, 30, 15];
+        return <div className="tM10">
             <div className="tFBH tFBAC tH44">
                 <div className="tFB1">服务态度：</div>
                 <div>
-                    <Rate totalScore={5} height={30} gap={15} score={t.state.score} onChange={t.handleChange.bind(t)} />
+                    <Rate totalScore={totalScore} height={height} gap={gap} score={t.state.score1} onChange={t.handleChange.bind(t, 'score1')} />
                 </div>
             </div>
             <div className="tFBH tFBAC tH44">
-                <div className="tFB1">服务态度：</div>
+                <div className="tFB1">认路能力：</div>
                 <div>
-                    <Rate totalScore={5} height={30} gap={15} score={t.state.score} onChange={t.handleChange.bind(t)} />
+                    <Rate totalScore={totalScore} height={height} gap={gap} score={t.state.score2} onChange={t.handleChange.bind(t, 'score2')} />
                 </div>
             </div>
             <div className="tFBH tFBAC tH44">
-                <div className="tFB1">服务态度：</div>
+                <div className="tFB1">开车水平：</div>
                 <div>
-                    <Rate totalScore={5} height={30} gap={15} score={t.state.score} onChange={t.handleChange.bind(t)} />
+                    <Rate totalScore={totalScore} height={height} gap={gap} score={t.state.score3} onChange={t.handleChange.bind(t, 'score3')} />
                 </div>
             </div>
         </div>
