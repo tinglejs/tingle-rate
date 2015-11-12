@@ -12,6 +12,9 @@
   text-align: center;
   overflow: hidden;
 }
+.tRateItem:last-child {
+  margin-right: 0 !important;
+}
 .tRateItem svg {
   width: 100%;
   height: 100%;

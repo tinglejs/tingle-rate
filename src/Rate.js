@@ -29,7 +29,8 @@ class Rate extends React.Component {
                     'active': i <= t.props.score
                 })} key={i} onClick={t.handleItemClick.bind(t, i)} style={{
                     width: unitize(t.props.height),
-                    height: unitize(t.props.height)
+                    height: unitize(t.props.height),
+                    marginRight: unitize(t.props.gap)
                 }}>
                     <Icon id='tingle-rate-icon' className={'tRateIcon'} />
                 </i>);
@@ -47,6 +48,7 @@ Rate.defaultProps = {
     totalScore: 5,
     score: 0,
     height: 30,
+    gap: 15,
     onChange: noop
 };
 
@@ -59,6 +61,7 @@ Rate.propTypes = {
         React.PropTypes.number,
         React.PropTypes.string
     ]),
+    gap: React.PropTypes.number,
     onChange: React.PropTypes.func
 };
 

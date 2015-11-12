@@ -31,7 +31,19 @@ class Demo extends React.Component {
             <div className="tFBH tFBAC tH44">
                 <div className="tFB1">服务态度：</div>
                 <div>
-                    <Rate totalScore={5} height={30} score={t.state.score} onChange={t.handleChange.bind(t)} />
+                    <Rate totalScore={5} height={30} gap={15} score={t.state.score} onChange={t.handleChange.bind(t)} />
+                </div>
+            </div>
+            <div className="tFBH tFBAC tH44">
+                <div className="tFB1">服务态度：</div>
+                <div>
+                    <Rate totalScore={5} height={30} gap={15} score={t.state.score} onChange={t.handleChange.bind(t)} />
+                </div>
+            </div>
+            <div className="tFBH tFBAC tH44">
+                <div className="tFB1">服务态度：</div>
+                <div>
+                    <Rate totalScore={5} height={30} gap={15} score={t.state.score} onChange={t.handleChange.bind(t)} />
                 </div>
             </div>
         </div>
