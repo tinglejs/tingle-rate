@@ -56,7 +56,7 @@ npm install tingle-rate --save
 
 类型：Number 或 String
 
-默认：10
+默认：15
 
 必选：否
 
