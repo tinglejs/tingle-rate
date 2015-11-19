@@ -48,7 +48,7 @@ Rate.defaultProps = {
     totalScore: 5,
     score: 0,
     height: 30,
-    gap: 15,
+    gap: 10,
     onChange: noop
 };
 
