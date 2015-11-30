@@ -7,7 +7,6 @@
  */
 
 const classnames = require('classnames');
-
 const Rate = require('../src');
 
 class Demo extends React.Component {
