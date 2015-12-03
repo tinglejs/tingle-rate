@@ -52,7 +52,7 @@ npm install tingle-rate --save
 
 #### gap
 
-描述：每一项的margin-right值。但最后一项margin-right为: 0 !important。
+描述：每一项的padding-let 和 padding-right的总和。但第一项的padding-let和最后一项padding-right均为: 0 !important。
 
 类型：Number 或 String
 

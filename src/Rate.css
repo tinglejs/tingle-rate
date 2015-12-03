@@ -6,14 +6,19 @@
  * All rights reserved.
  */
 .tRateItem {
-  float: left;
   width: 30px;
   height: 30px;
   text-align: center;
   overflow: hidden;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+.tRateItem:first-child {
+  padding-left: 0 !important;
 }
 .tRateItem:last-child {
-  margin-right: 0 !important;
+  padding-right: 0 !important;
 }
 .tRateItem svg {
   width: 100%;
@@ -22,6 +27,16 @@
 }
 .tRateItem.active svg {
   fill: #f80;
+}
+.tRateItemMask {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  background-color: transparent;
 }
 
 /*# sourceMappingURL=Rate.css.map */

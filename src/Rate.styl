@@ -10,15 +10,18 @@
 @require '../node_modules/tingle-style/src/var'
 
 //.tRate
-
 .tRateItem
-    float left
     width 30px
     height @width
     text-align center
     overflow hidden
+    -webkit-box-sizing: content-box
+    -moz-box-sizing: content-box
+    box-sizing: content-box
+    &:first-child
+        padding-left 0 !important
     &:last-child
-        margin-right 0 !important
+        padding-right 0 !important
     svg
         width 100%
         height 100%
@@ -26,3 +29,12 @@
     &.active svg
         fill #ff8800
 
+.tRateItemMask
+    width 100%
+    height 100%
+    left 0
+    top 0
+    right 0
+    bottom 0
+    z-index 10
+    background-color transparent
